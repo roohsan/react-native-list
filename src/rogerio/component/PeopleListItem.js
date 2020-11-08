@@ -47,7 +47,8 @@ const style = StyleSheet.create({
         lineText: {
             fontSize: 10,
             paddingLeft: 20,
-            flex: 7
+            flex: 7,
+            color: '#fff'
         }
     }
 )

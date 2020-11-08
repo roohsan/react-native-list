@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ListaDeContato",
-    "slug": "ListaDeContato",
+    "name": "lista",
+    "slug": "lista",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
