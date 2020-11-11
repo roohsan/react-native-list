@@ -22,19 +22,19 @@ export default class EstadosDetailsPage extends React.Component{
                 </View>
                 <Image style={style.avatar} source={img(this.state.estado.uf)}/>
             <View style={style.line}>
-                <Text style={style.linetext}>UF:
+                <Text style={style.linetext}>UF: 
                 {this.state.estado.uf}  
                 </Text>
-            <Text style={style.linetext}>Casos:
+            <Text style={style.linetext}>Casos: 
                 {this.state.estado.cases}  
                 </Text>
-                <Text style={style.linetext}>Suspeitas:
+                <Text style={style.linetext}>Suspeitas: 
                 {this.state.estado.suspects}  
                 </Text>
-                <Text style={style.linetext}>Recuperados:
+                <Text style={style.linetext}>Recuperados: 
                 {this.state.estado.refuses}  
                 </Text>
-                <Text style={style.linetext}>Mortes:
+                <Text style={style.linetext}>Mortes: 
                 {this.state.estado.deaths}  
                 </Text>
             </View>

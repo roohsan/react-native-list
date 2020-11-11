@@ -11,6 +11,7 @@ import RMDetailsPage from './src/luan/pages/RMDetailsPage';
 import RMPage from './src/luan/pages/RMPage';
 import DBZDetailsPage from './src/willian/pages/DBZDetailsPage';
 import DBZPage from './src/willian/pages/DBZPage';
+import MainPage from './src/main/MainPage';
 
 /*const Stack = createStackNavigator();*/
 const Drawer = createDrawerNavigator();
@@ -19,7 +20,8 @@ function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Drawer.Navigator initialRouterName="EstadosPage">
+        <Drawer.Navigator initialRouterName="MainPage">
+        <Drawer.Screen name="Início" component={MainPage} />
           <Drawer.Screen name="Lista de Estados" component={EstadosPage} />
           <Drawer.Screen name="Pokemons Listas" component={PeoplePage} />
           <Drawer.Screen name="Rick and Morty Lista" component={RMPage} />

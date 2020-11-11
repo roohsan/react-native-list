@@ -15,7 +15,11 @@ export default class DBZDetailsPage extends React.Component{
         return(
             <View style={style.container}>
                 <Text style={style.titleStyle}>Nome: {this.state.personagem.name}</Text>
-               <Image style={style.avatar} source={{uri:slicer(this.state.personagem.image_url)}}></Image>
+                <Image
+                style={style.avatar}
+                source={{ uri: this.state.personagem.image_url }}
+                />
+               {/*<Image style={style.avatar} source={{uri:slicer(this.state.personagem.image_url)}}></Image>*/}
                     <Text style={style.titleStyle}>
                     Página no MyAnimeList: {this.state.personagem.url}
                 </Text> 

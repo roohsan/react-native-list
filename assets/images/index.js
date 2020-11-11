@@ -26,3 +26,4 @@ export const SE = require('./SE.png');
 export const SP = require('./SP.png'); 
 export const TO = require('./TO.png'); 
 export const DF = require('./DF.png'); 
+export const swipe = require('./swipe-helper.gif');
