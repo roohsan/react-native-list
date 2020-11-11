@@ -9,6 +9,8 @@ import PeopleDetailsPage from './src/rogerio/pages/PeopleDetailsPage';
 import PeoplePage from './src/rogerio/pages/PeoplePage';
 import RMDetailsPage from './src/luan/pages/RMDetailsPage';
 import RMPage from './src/luan/pages/RMPage';
+import DBZDetailsPage from './src/willian/pages/DBZDetailsPage';
+import DBZPage from './src/willian/pages/DBZPage';
 
 /*const Stack = createStackNavigator();*/
 const Drawer = createDrawerNavigator();
@@ -21,6 +23,7 @@ function App() {
           <Drawer.Screen name="Lista de Estados" component={EstadosPage} />
           <Drawer.Screen name="Pokemons Listas" component={PeoplePage} />
           <Drawer.Screen name="Rick and Morty Lista" component={RMPage} />
+          <Drawer.Screen name="Lista de Personagens DBZ" component={DBZPage} />
           <Drawer.Screen
             name="Detalhes do Estado"
             component={EstadosDetailsPage}
@@ -42,6 +45,15 @@ function App() {
           <Drawer.Screen
             name="Rick and Morty Detalhes"
             component={RMDetailsPage}
+            options={() => ({
+              drawerLabel: () => null,
+              title: undefined,
+              drawerIcon: () => null,
+            })}
+          />
+          <Drawer.Screen
+            name="Detalhe do Personagem"
+            component={DBZDetailsPage}
             options={() => ({
               drawerLabel: () => null,
               title: undefined,
