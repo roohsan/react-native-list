@@ -11,6 +11,8 @@ import RMDetailsPage from './src/luan/pages/RMDetailsPage';
 import RMPage from './src/luan/pages/RMPage';
 import DBZDetailsPage from './src/willian/pages/DBZDetailsPage';
 import DBZPage from './src/willian/pages/DBZPage';
+import FotoDetailsPage from './src/elton/pages/FotoDetailsPage';
+import FotoPage from './src/elton/pages/FotoPage';
 import MainPage from './src/main/MainPage';
 
 /*const Stack = createStackNavigator();*/
@@ -26,6 +28,7 @@ function App() {
           <Drawer.Screen name="Pokemons Listas" component={PeoplePage} />
           <Drawer.Screen name="Rick and Morty Lista" component={RMPage} />
           <Drawer.Screen name="Lista de Personagens DBZ" component={DBZPage} />
+		  <Drawer.Screen name="Lista de Fotos" component={FotoPage} />
           <Drawer.Screen
             name="Detalhes do Estado"
             component={EstadosDetailsPage}
@@ -62,6 +65,15 @@ function App() {
               drawerIcon: () => null,
             })}
           />
+		  <Drawer.Screen
+            name="Detalhes da Foto"
+            component={FotoDetailsPage}
+            options={() => ({
+              drawerLabel: () => null,
+              title: undefined,
+              drawerIcon: () => null,
+            })}
+          />
         </Drawer.Navigator>
       </NavigationContainer>
     </View>
@@ -80,4 +92,5 @@ class Hidden extends React.Component {
     return null;
   }
 }
+
 export default App;
